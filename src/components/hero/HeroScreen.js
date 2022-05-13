@@ -32,14 +32,14 @@ export const HeroScreen = () => {
 
   return (
     <div className="row mt-5">
-        <div className="col-4">
+        <div className="col-4 animate__animated animate__bounceInLeft">
           <img 
           src={imagePath} 
           alt={superhero}
           className="img-thumbnail"
           />
         </div>
-        <div className="col-8">
+        <div className="col-8 animate__animated animate__bounceInDown">
           <h3>{superhero}</h3>
           <ul className="list-group">
             <li className="list-group-item mb-2">
