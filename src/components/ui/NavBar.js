@@ -20,7 +20,7 @@ export const Navbar = () => {
                 className="navbar-brand" 
                 to="/"
             >
-                Asociaciones
+                Home
             </Link>
 
             <div className="navbar-collapse">
