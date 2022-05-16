@@ -1,6 +1,6 @@
 APLICACION CREADA CON REACT
 
-https://ftvalex01.github.io/login
+https://ftvalex01.github.io/heroes-app-react/
 
 tendremos que darle al boton de login para que nos haga un falso login (no es lo importante de la app)
 
