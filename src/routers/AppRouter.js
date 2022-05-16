@@ -1,7 +1,8 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom"
-import { LoginScreen } from "../components/login/LoginScreen"
 import { DarshboardRoutes } from "./DarshboardRoutes"
-
+import { PrivateRoute } from "./PrivateRoute"
+import {LoginScreen} from "../components/login/LoginScreen"
+import { PublicRoute } from "./PublicRoute"
 
 
 
@@ -11,8 +12,18 @@ export const AppRouter = () => {
         <BrowserRouter>
 
             <Routes>
-                <Route path="/login" element={<LoginScreen />} />
-                <Route path="/*" element={<DarshboardRoutes/>}></Route>
+                
+                <Route path="/login" element={
+                <PublicRoute>
+                    <LoginScreen></LoginScreen>
+                </PublicRoute>} />
+
+                <Route path="/*" element={
+                <PrivateRoute>
+                    <DarshboardRoutes/>
+                </PrivateRoute>}>  
+                </Route>
+
             </Routes>
 
         </BrowserRouter>
