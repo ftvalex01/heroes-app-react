@@ -4,6 +4,8 @@ import { getHeroById } from "../../helpers/getHeroById"
 
 
 
+const heroImages = require.context('../../assets/imagenes',true);
+
 export const HeroScreen = () => {
 
 
@@ -28,13 +30,14 @@ export const HeroScreen = () => {
     first_appearance,
     characters
   } = hero
-  const imagePath = `/assets/imagenes/${id}.jpg`;
+
+
 
   return (
     <div className="row mt-5">
         <div className="col-4 animate__animated animate__bounceInLeft">
           <img 
-          src={imagePath} 
+          src={heroImages(`./${id}.jpg`)} 
           alt={superhero}
           className="img-thumbnail"
           />

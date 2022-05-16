@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom"
 import './HeroCard.css'
 
+
+const heroImages = require.context('../../assets/imagenes',true);
+
 export const HeroCard = ({
     id,
     superhero,
@@ -10,12 +13,12 @@ export const HeroCard = ({
     characters,
 }) => {
 
-    const imagePath = `/assets/imagenes/${id}.jpg`
+
 
     return (
        
         <Link to={`/hero/${id}`} className="my-card">
-        <img src={imagePath} className="img img-responsive" alt={superhero}/>
+        <img src={heroImages(`./${id}.jpg`)} className="img img-responsive" alt={superhero}/>
         <div className="profile-name">{superhero}</div>
         <div className="profile-position">{alter_ego}</div>
         <div className="profile-overview">
