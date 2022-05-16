@@ -1,3 +1,32 @@
+APLICACION CREADA CON REACT
+
+https://ftvalex01.github.io/login
+
+tendremos que darle al boton de login para que nos haga un falso login (no es lo importante de la app)
+
+y una ves dentro podremos ver los heroes de DC o de Marvel o buscar un heroe en especifico y si picamos en algun heroe nos saldra mas informacion
+
+no es muy bonito de ver ya que lo mio no es el diseño , pero es funcional , implementa rutas protegidas ,useMemo , useContext , localStorage ,Navigate
+
+espero que les guste.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
